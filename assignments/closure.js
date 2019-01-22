@@ -1,15 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-let z = 5;
 function me(){
-  let a = 0;
-  console.log('challenge 1', a + z);
-  return function mum(){
-    let b = 1;
-    return a + b;
+  let a = 5;
+  function multiply(){
+    return a * 10;
   }
+  multiply();
 }
-me();
+let number = me();
+console.log('attention', number);
+// console.log('closure', number);
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   let a = 1;
