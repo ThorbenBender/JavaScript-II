@@ -115,3 +115,8 @@ runnerAfterRefunds = runners.map((runner) => {
 })
 console.log('hello', donateAboveTwoHundred);
 // Problem 3
+let onlyEmails = [];
+onlyEmails = runners.map(runner => {
+    return runner.email;
+});
+console.log(onlyEmails);

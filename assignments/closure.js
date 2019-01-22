@@ -17,8 +17,11 @@ const counter = () => {
   function increaseNum(){
     return a++;
   }
+  increaseNum();
+  return a;
 };
-console.log(counter());
+const newCounter = counter();
+console.log(newCounter);
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
